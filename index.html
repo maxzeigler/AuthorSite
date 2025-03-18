@@ -11,9 +11,13 @@
             line-height: 1.6;
             background-color: #f9f8f6;
             color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
         }
 
         header {
@@ -69,45 +73,14 @@
         #goodreads-widget {
             font-family: georgia, serif;
             padding: 18px 0;
-            width: 565px;
             text-align: center;
-        }
-
-        #goodreads-widget h1 {
-            font-weight: normal;
-            font-size: 16px;
-            border-bottom: 1px solid #BBB596;
-            margin-bottom: 0;
-        }
-
-        #goodreads-widget a {
-            text-decoration: none;
-            color: #660;
+            margin: 0 auto;
         }
 
         iframe {
             background-color: #fff;
-        }
-
-        #goodreads-widget a:hover {
-            text-decoration: underline;
-        }
-
-        #goodreads-widget a:active {
-            color: #660;
-        }
-
-        #gr_footer {
             width: 100%;
-            border-top: 1px solid #BBB596;
-            text-align: right;
-        }
-
-        #goodreads-widget .gr_branding {
-            color: #382110;
-            font-size: 11px;
-            text-decoration: none;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            max-width: 575px;
         }
 
         .purchase {
@@ -136,55 +109,56 @@
             .cover-img {
                 max-width: 100%;
             }
+
+            iframe {
+                width: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Hanging from Yggdrasil</h1>
-        <h2>Ancient Wisdom for the Technological Age</h2>
-        <p>by Max Zeigler</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Hanging from Yggdrasil</h1>
+            <h2>Ancient Wisdom for the Technological Age</h2>
+            <p>by Max Zeigler</p>
+        </header>
 
-    <img class="cover-img" src="book_cover.png" alt="Cover of Hanging from Yggdrasil">
+        <img class="cover-img" src="book_cover.jpg" alt="Cover of Hanging from Yggdrasil">
 
-    <section class="intro">
-        <p><strong>Hanging from Yggdrasil</strong> explores the eternal balance between violence and wisdom, examining
-            how ancient insights from Norse mythology can illuminate our path through modern technological upheaval.
-            Drawing on history, philosophy, and myth, Max Zeigler invites readers to reflect on the profound need for
-            sacrifice, discipline, and aesthetic vision in shaping a world driven by unprecedented technological power.
-        </p>
-        <p>The book argues that only by reuniting force and foresight, power and wisdom, can society navigate the coming
-            storms of artificial intelligence, genetic engineering, and robotics, and forge something meaningful and
-            lasting from the chaos.</p>
-    </section>
+        <section class="intro">
+            <p><strong>Hanging from Yggdrasil</strong> explores the eternal balance between violence and wisdom, examining
+                how ancient insights from Norse mythology can illuminate our path through modern technological upheaval.
+                Drawing on history, philosophy, and myth, Max Zeigler invites readers to reflect on the profound need for
+                sacrifice, discipline, and aesthetic vision in shaping a world driven by unprecedented technological power.
+            </p>
+            <p>The book argues that only by reuniting force and foresight, power and wisdom, can society navigate the coming
+                storms of artificial intelligence, genetic engineering, and robotics, and forge something meaningful and
+                lasting from the chaos.</p>
+        </section>
 
-    <section class="author-info">
-        <h3>About the Author</h3>
-        <p>Max Zeigler writes about the intersection of history, philosophy, and technology. His insights draw deeply
-            from classical traditions, particularly Norse mythology, to address contemporary challenges.</p>
-        <p>Email: <a href="haikuheroics@gmail.com">haikuheroics@gmail.com</a><br>
-            Follow on X: <a href="https://x.com/haikuheroics" target="_blank">@haikuheroics</a></p>
-    </section>
+        <section class="author-info">
+            <h3>About the Author</h3>
+            <p>Max Zeigler writes about the intersection of history, philosophy, and technology. His insights draw deeply
+                from classical traditions, particularly Norse mythology, to address contemporary challenges.</p>
+            <p>Email: <a href="mailto:haikuheroics@gmail.com">haikuheroics@gmail.com</a><br>
+                Follow on X: <a href="https://x.com/haikuheroics" target="_blank">@haikuheroics</a></p>
+        </section>
 
-    <section class="purchase">
-        <a class="buy-btn" href="https://www.amazon.com/dp/B0DZ7S2CJP" target="_blank">Buy on Amazon</a>
-        <div id="goodreads-widget">
-            <iframe sandbox id="the_iframe"
-                src="https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+Hanging+from+Yggdrasil&isbn=9798308779643&links=660&min_rating=3&num_reviews=3&review_back=ffffff&stars=000000&stylesheet=&text=444"
-                width="575" height="400" frameborder="0"></iframe>
-            <div id="gr_footer">
-                <a class="gr_branding" target="_blank" rel="nofollow noopener noreferrer"
-                    href="https://www.goodreads.com/book/show/228714451-hanging-from-yggdrasil?utm_medium=api&utm_source=reviews_widget">Reviews
-                    from Goodreads.com</a>
+        <section class="purchase">
+            <a class="buy-btn" href="https://www.amazon.com/dp/B0DZ7S2CJP" target="_blank">Buy on Amazon</a>
+            <div id="goodreads-widget">
+                <iframe sandbox id="the_iframe"
+                    src="https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+Hanging+from+Yggdrasil&isbn=9798308779643&links=660&min_rating=3&num_reviews=3&review_back=ffffff&stars=000000&stylesheet=&text=444"
+                    height="400" frameborder="0"></iframe>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>Copyright © 2025 by Max Zeigler. All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>Copyright © 2025 by Max Zeigler. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 
 </html>
