@@ -114,6 +114,16 @@
             text-align: center;
         }
 
+        .cover-img {
+            display: block;
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
         @media (max-width: 600px) {
             body {
                 padding: 15px;
@@ -121,6 +131,10 @@
 
             h1 {
                 font-size: 2em;
+            }
+
+            .cover-img {
+                max-width: 100%;
             }
         }
     </style>
@@ -132,6 +146,8 @@
         <h2>Ancient Wisdom for the Technological Age</h2>
         <p>by Max Zeigler</p>
     </header>
+
+    <img class="cover-img" src="book_cover.jpg" alt="Cover of Hanging from Yggdrasil">
 
     <section class="intro">
         <p><strong>Hanging from Yggdrasil</strong> explores the eternal balance between violence and wisdom, examining
@@ -155,11 +171,6 @@
     <section class="purchase">
         <a class="buy-btn" href="https://www.amazon.com/dp/B0DZ7S2CJP" target="_blank">Buy on Amazon</a>
         <div id="goodreads-widget">
-            <div id="gr_header">
-                <h1><a rel="nofollow"
-                        href="https://www.goodreads.com/book/show/228714451-hanging-from-yggdrasil">Goodreads reviews
-                        for Hanging from Yggdrasil</a></h1>
-            </div>
             <iframe sandbox id="the_iframe"
                 src="https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+Hanging+from+Yggdrasil&isbn=9798308779643&links=660&min_rating=3&num_reviews=3&review_back=ffffff&stars=000000&stylesheet=&text=444"
                 width="575" height="400" frameborder="0"></iframe>
